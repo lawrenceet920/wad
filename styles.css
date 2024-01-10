@@ -1,0 +1,34 @@
+body {
+    color: #a6a5ad;
+    background-color: #2b2a33;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    color: #fbfbfe;
+}
+
+a:link {
+    color: #fbfbfe;
+}
+a:visited {
+    color: #a6a5ad;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+}
+li {
+    border: 1px black solid;
+    list-style: none;
+    background-color: #42414b;
+
+    text-align: center;
+}
+li:hover {
+    background-color: #84828f;
+}
