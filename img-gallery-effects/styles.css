@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* This line loops the images into the next line if there is not enough space*/
+    justify-content: center;
+  }
+
+  .image-gallery img {
+    width: 200px;
+    height: 100%;
+    margin: 10px;
+
+    transition: opacity 0.3s ease-in-out; /* This eases any change in "opacity" over "0.3s"*/
+  }
+  /* These two lines make the hover image effect*/
+  .image-gallery img:hover {
+    opacity: 0.8; /* This sets opacity to 0.8 when hovered and resets to default when not*/
+  }
+
+  figure {
+    margin-bottom: 2.5rem;
+  }
+  figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+  }
