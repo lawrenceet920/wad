@@ -11,7 +11,7 @@
   }
 
   .image-gallery img {
-    width: 200px;
+    width: 206px; /* This is the smallest width that allows single col img gal*/
     height: 100%;
     margin: 10px;
 
