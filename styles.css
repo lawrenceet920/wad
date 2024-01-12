@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
 body {
     color: #a6a5ad;
     background-color: #2b2a33;
@@ -5,6 +9,9 @@ body {
 }
 h1 {
     color: #fbfbfe;
+    margin: 20px;
+    text-align: center;
+    border-bottom: wheat 2px solid;
 }
 
 a:link {
@@ -20,14 +27,12 @@ a {
     text-align: center;
     display: block;
     margin: 20px;
-    padding: 10px;
 }
 li {
-    border: 1px black solid;
+    margin: 10px 20% 10px 20%;
+    border: 2px black solid;
     list-style: none;
     background-color: #42414b;
-
-    text-align: center;
 }
 li:hover {
     background-color: #84828f;
