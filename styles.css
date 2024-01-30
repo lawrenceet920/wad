@@ -26,14 +26,15 @@ a {
     text-decoration: none;
     text-align: center;
     display: block;
-    margin: 20px;
+    background-color: #42414b;
+    padding: 1rem;
+    border: #2b2a33 1px solid;
 }
 li {
+    list-style: none;
     margin: 10px 20% 10px 20%;
     border: 2px black solid;
-    list-style: none;
-    background-color: #42414b;
 }
-li:hover {
+a:hover {
     background-color: #84828f;
 }
