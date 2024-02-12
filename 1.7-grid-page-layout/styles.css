@@ -1,0 +1,46 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cont {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+
+    margin: auto;
+    width: 80%;
+    height: auto;
+
+    gap: 0.5rem;
+    background-color: black;
+
+    font-size: 1.2rem;
+}
+.header, .sidebar, .content-1, .content-2, .content-3, .footer {
+    padding: 10px;
+}
+.header {
+    font-size: 2rem;
+    grid-column: 1 / 4;
+    background-color: lightblue;
+}
+.sidebar {
+    grid-row: 2 / 4;
+    background-color: salmon;
+}
+.content-1 {
+    grid-column: 2 / 4;
+    background-color: yellow;
+}
+.content-2 {
+    grid-column: 2 / 3;
+    
+    background-color: pink;
+}
+.content-3 {
+    grid-column: 3 / 4;
+    background-color: lightgreen;
+}
+.footer {
+    grid-column: 1 / 4;
+    background-color: sandybrown;
+}
