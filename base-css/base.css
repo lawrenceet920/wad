@@ -1,0 +1,6 @@
+/* This page is to be linked to other css pages */
+:root {
+    --primary: blue;
+
+    --base-font: "Indie Flower", cursive;
+}

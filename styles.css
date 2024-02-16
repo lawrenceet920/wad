@@ -14,6 +14,14 @@ h1 {
     border-bottom: wheat 2px solid;
 }
 
+.split {
+    /* Once grids are done turn the split into a grid base rather then float-margin based system */
+    margin: 10px 2% 10px 2%;
+    width: 40%;
+    border: 5px wheat solid;
+    background-color: #3b3a43;
+    float: left;
+}
 a:link {
     color: #fbfbfe;
 }
@@ -26,13 +34,14 @@ a {
     text-decoration: none;
     text-align: center;
     display: block;
-    background-color: #42414b;
+    background-color: #52515b;
     padding: 1rem;
     border: #2b2a33 1px solid;
 }
 li {
+    width: 90%;
     list-style: none;
-    margin: 10px 20% 10px 20%;
+    margin: 5px auto 5px auto;
     border: 2px black solid;
 }
 a:hover {
