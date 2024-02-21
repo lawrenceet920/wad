@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    /* background-image: url(LINK);
+    background-size: cover; */
+    background-color: aliceblue;
+    padding: 10px 10px 100px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 3.5rem;
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+
+    text-align: center;
+}
+.title-underline {
+    background-color:  rgb(83, 167, 184);
+    width: 100px;
+    height: 8px;
+    margin: auto;
+}
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    background-color: var(--black);
+}
+nav ul li {
+    padding: 5px 20px;
+    float: right;
+}
+nav ul li:first-child {
+    padding: 5px 20px;
+    float: left;
+}
+nav ul img {
+    max-height: 56px;
+    object-fit: contain;
+
+    margin: 10px;
+}
+.logo-name {
+    background-color: antiquewhite;
+}
