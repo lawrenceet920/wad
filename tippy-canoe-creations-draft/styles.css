@@ -30,21 +30,32 @@ nav ul {
     overflow: hidden;
     list-style-type: none;
     background-color: var(--black);
+
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
 }
 nav ul li {
     padding: 5px 20px;
     float: right;
+    list-style: disc;
+}
+nav ul a {
+    color: black;
 }
 nav ul li:first-child {
     padding: 5px 20px;
     float: left;
 }
 nav ul img {
+    display: inline-block;
     max-height: 56px;
-    object-fit: contain;
 
-    margin: 10px;
+    padding: 8px 4px 8px 12px;
+    vertical-align: middle;
 }
 .logo-name {
-    background-color: antiquewhite;
+    display: inline-block;
+
+    font-size: 22px;
+    letter-spacing: 1.5px;
 }
