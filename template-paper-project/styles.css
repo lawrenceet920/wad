@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --col-count-5: 5;
+    font-size: 20px;
+}
+
+body {
+    margin: 0 1rem;
+}
+
+
+.container {
+    display: grid;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto auto auto auto 1fr auto;
+    /* gap: 0.5rem; */
+
+    grid-template-areas: 
+    "header header"
+    "left   left"
+    "right  right"
+    "nav    nav"
+    "main   main"
+    "footer footer";
+}
+
+.item {
+    padding: 1rem;
+    /* border: 2px solid black; */
+}
+
+.left {
+    grid-area: left;
+    background-color: #ffb051;
+}
+.right {
+    grid-area: right;
+    background-color: #add8e6;
+}
+header {
+    grid-area: header;
+    background-color: #50a3be;
+}
+.nav {
+    grid-area: nav;
+    /* background-color: #c51ba6; */
+    padding: 0;
+}
+.main-content {
+    grid-area: main;
+    background-color: #80be50;
+}
+footer {
+    grid-area: footer;
+    background-color: #26cbe4;
+}
+
+
+.ul-margin, .ol-margin {
+    margin: 1rem 0    1rem   1rem;
+    /*      top  right bottom left */
+}
+
+.right ul li,    .left ul li,   main ul li {
+    margin-bottom: 0.25rem;
+}
+
+.nav ul {
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav a {
+    background-color: aqua;
+    display: block;
+
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(85, 82, 82);
+    font-size: 1rem;
+    font-weight: bold;
+
+    padding: 0.5rem;
+}
+.nav a:hover {
+    background-color: rgb(255, 130, 47);
+    color: black;
+}
+
+
+@media (width > 750px) {
+    .container {
+        grid-template-columns: repeat(var(--col-count-5), 1fr);
+        grid-template-rows: auto auto 1fr 1fr auto;
+        grid-template-areas: 
+        "header header header header header"
+        "nav    nav    nav    nav    nav"
+        "left   main   main   main   right"
+        "left   main   main   main   right"
+        "footer footer footer footer footer";
+    }
+
+    .nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* gap: 0.5rem; */
+        list-style: none;
+    }
+    .nav a {
+        padding: 0.75rem;
+    }
+    .nav a:hover {
+        background-color: orangered;
+        color: #333;
+    }
+}
