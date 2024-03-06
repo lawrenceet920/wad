@@ -1,0 +1,57 @@
+body {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cards {
+    display: grid;
+    gap: 50px;
+
+    max-width: 900px;
+    margin: 2em auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 400px 1fr;
+    border: 2px solid #655;
+    border-radius: 3px;
+    background-color: #dff;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h2 {
+    margin: 0;
+    padding: 0.5rem;
+
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.card .content {
+    padding: 0.5rem;
+}
+.card footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+@media (width < 550px) {
+    .cards {
+        margin: 1em 2em;
+    }
+}
