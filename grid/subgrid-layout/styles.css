@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+h1 {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.75rem;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top {
+    background-color: aquamarine;
+    color: black;
+    height: 30vh;
+    padding: 1.5rem;
+
+    display: grid;
+    grid-column: 1 / 5;
+}
+
+p.side {
+    background-color: orangered;
+    margin: 0;
+    padding: 1rem;
+    grid-column: 5 / 8;
+}
+
+ul.side {
+    background-color: magenta;
+    margin: 0;
+    padding: 1rem;
+    grid-column: 8 / 13;
+}
+
+ul.side li {
+    margin-left: 1rem;
+}
+
+.bottom {
+    display: grid;
+    grid-column: 1 / 9;
+    grid-template-columns: subgrid;
+
+
+    /* This is nesting, these rules are related and this is a shorthand that also better sorts the code,
+     the & calls for .bottom and then item in .bottom is called */
+    & .content {
+        background-color: lightblue;
+        padding: 1.5rem;
+        grid-column: 1 / 6;
+    }
+
+    & img {
+        grid-column: 6 / 9;
+    }
+}
+
+aside {
+    background-color: #ac81e6;
+    padding: 1.5rem;
+
+    grid-column: 9 / 13;
+
+    & h1 {
+        margin-bottom: 1rem;
+    }
+    & h3 {
+        margin-top: 1rem;
+    }
+}
