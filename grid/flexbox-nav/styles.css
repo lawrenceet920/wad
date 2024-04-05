@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+}
+body {
+    font-family: "Dosis", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    max-width: 90rem;
+    padding: 25px;
+    gap: 1rem;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr repeat(7, 1fr);
+    grid-template-rows: 2fr 1fr 3fr 3fr 3fr 1fr;
+    grid-template-areas: 
+    'hdr hdr hdr hdr hdr hdr hdr hdr'
+    'nav nav nav nav nav nav nav nav'
+    'asd cont-1 cont-1 cont-1 cont-2 cont-2 cont-2 cont-2'
+    'asd sub sub sub sub sub sub sub'
+    'asd sub sub sub sub sub sub sub'
+    'ftr ftr ftr ftr ftr ftr ftr ftr';
+}
+header, nav, aside, .cont-box-l, .cont-box-2, .sub-cont, footer {
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+img {
+    object-fit: contain;
+    margin: 10px;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+figure {
+    text-align: center;
+}
+
+header {
+    grid-area: hdr;
+    background-color: #76cee2;
+    text-align: center;
+}
+nav {
+    grid-area: nav;
+    background-color: #99f599;
+}
+aside {
+    grid-area: asd;
+    background-color: #f0591a;
+}
+.cont-box-l {
+    grid-area: cont-1;
+    background-color: #2edfca;
+}
+.cont-box-2 {
+    grid-area: cont-2;
+    background-color: #d1a8d1;
+}
+.sub-cont {
+    display: grid;
+    grid-area: sub;
+    background-color: #5f9fbc;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+footer {
+    grid-area: ftr;
+    background-color: #d8b56a;
+    text-align: center;
+}
+
+.cont-box-3 {
+    grid-column: 1 / 5;
+    background-color: #ff5218;
+}
+.green {
+    grid-column: 4 / -1;
+    background-color: #97f11a;
+    text-align: right;
+
+    & p {
+        padding: 2rem;
+    }
+}
