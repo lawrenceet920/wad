@@ -49,10 +49,30 @@ header {
     background-color: #76cee2;
     text-align: center;
 }
+
+
 nav {
     grid-area: nav;
     background-color: #99f599;
+
+    & ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    & a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        display: block;
+        padding: 20px;
+        background-color: #9e9797;
+    }
+    & a:hover {
+        background-color: #ee4c0c;
+    }
 }
+
+
 aside {
     grid-area: asd;
     background-color: #f0591a;
@@ -89,5 +109,18 @@ footer {
 
     & p {
         padding: 2rem;
+    }
+}
+
+@media screen and (width > 768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
     }
 }

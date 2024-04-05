@@ -1,0 +1,138 @@
+/* Alignment & Justifying Properties in CSS Grid */
+/* Source: https://www.youtube.com/watch?v=rKlURf2fXNo */
+
+html {
+    font-size: 12px;
+  }
+  
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+  }
+  
+  hr {
+    margin: 2rem 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+  
+    background-color: lightgray;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    height: 250px;
+  
+  }
+  
+  .c1, .c2 {
+    grid-auto-rows: 60px;
+  }
+  
+  .c1 {
+    /* 
+    Possible values for justify-content are: start | end | center | stretch | space-around | space-between | space-evenly; 
+  
+    NOTE: stretch is the default value.
+    
+    */
+    justify-content: space-evenly; /* Only works when grid is smaller than the grid container! */
+  }
+  
+  .c2 {
+    /* 
+    Possible values for align-content are: start | end | center | stretch | space-around | space-between | space-evenly; 
+  
+    NOTE: stretch is the default value.
+    
+    */
+    align-content: space-around;
+  }
+  
+  .c3 {
+      /* 
+      Possible values for justify-items are: start | end | center | stretch; 
+  
+      NOTE: stretch is the default value.
+      
+      */
+    justify-items: strech;
+  }
+  
+  .c4 { 
+  
+    /*
+  
+      Possible values for align-items are: start | end | center | stretch; 
+  
+      NOTE: stretch is the default value.
+  
+    */
+    align-items: stretch; 
+  }
+  
+  .c5 {
+    align-self: start; /* Do not change this line of CSS */
+  
+    /*
+    For justify-self below, the possible values are: start | end | center | stretch; 
+  
+    NOTE: stretch is the default value.
+  
+    */
+    justify-self: stretch;
+  }
+  
+  .c6 {
+  /*
+    For align-self below, the possible values are: start | end | center | stretch; 
+  
+      NOTE: stretch is the default value.
+  
+    */
+    align-self: center;
+  
+    justify-self: center; /* Do not change this line of CSS */
+  }
+  
+  
+  .item {
+    border: 1p solid #333;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .i1 {
+    background-color: lightgreen;
+  }
+  
+  .i2 {
+    background-color: rgb(144, 224, 238);
+  }
+  
+  .i3 {
+    background-color: rgb(241, 174, 243);
+  }
+  
+  .i4 {
+    background-color: rgb(91, 170, 216);
+  }
+  
+  .i5 {
+    background-color: rgb(152, 212, 152);
+  }
+  
+  .i6 {
+    background-color: rgb(233, 125, 170);
+  }
+  
+  .i7 {
+    background-color: rgb(224, 46, 195);
+  }
+  
+  .i8 {
+    background-color: rgb(240, 139, 72);
+  }
