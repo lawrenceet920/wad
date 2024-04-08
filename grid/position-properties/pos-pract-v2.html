@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alignment & Justifying Practice 2.0 (CSS Grid)</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 250px); /* Two columns of equal width */
+      gap: 10px; 
+      height: 600px; 
+      
+      padding: 10px; /* Padding for content */
+    }
+
+    .grid-container1 { background-color: #63aa8d; }
+    .grid-container2 { background-color: #a1a3d9; }
+    .grid-container3 { background-color: #db4726; }
+
+	  hr { margin: 30px 0; }
+
+    .grid-item {
+      background-color: #c9eec5; 
+      padding: 10px;
+	    border: 2px solid rgb(67, 75, 76);
+      text-align: center; /* Center text on each item */
+    }
+
+    /* Style 1: Justify Content */
+    .justify-content {
+      justify-content: center; /* Align grid items horizontally within the grid container */
+    }
+
+    /* Style 2: Justify Items */
+    .justify-items {
+      justify-items: start; /* Center items horizontally within each grid column */
+    }
+
+    /* Style 3: Justify Self */
+    .justify-self {
+     
+      justify-self: center; /* Horizontally align a specific grid item within the grid column */
+      background-color: #31a8cd; 
+    }
+  </style>
+</head>
+<body>
+  <h3>Grid Container #1 / Justify Content</h3>
+  <div class="grid-container grid-container1 justify-content">
+	  <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3 has more content than Item 1 and Item 2.</div>
+  </div>
+
+  <hr>
+  <h3>Grid Container #2 / Justify Items</h3>
+  <div class="grid-container grid-container2 justify-items">
+    <div class="grid-item">Item 4</div>
+    <div class="grid-item">Item 5</div>
+  </div>
+
+  <hr>
+  <h3>Grid Container #3 / Justify Self</h3>
+  <div class="grid-container grid-container3">
+    <div class="grid-item justify-self">Item 6</div>
+    <div class="grid-item">Item 7</div>
+  </div>
+</body>
+</html>
