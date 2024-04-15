@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Template</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "head head head"
+            "main main main";
+            gap: 20px;
+        }
+
+        header {
+            grid-area: head;
+            background-color: aliceblue;
+            border: 5px dotted wheat;
+        }
+
+        main {
+            grid-area: main;
+            background-color: aliceblue;
+
+            display: grid;
+            grid-template-columns: subgrid;
+        }
+
+
+        #btn-avg {
+            grid-column: 2 / 3;
+
+            border: 3px solid black;
+            border-radius: 100%;
+            background-color: green;
+
+            text-align: center;
+
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Customer Stats Project</h1>
+            <p>View Output in browser console</p>
+        </header>
+
+        <main>
+            <h3>Header</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, autem debitis. Incidunt culpa maiores alias quaerat eius sequi nobis architecto, officia dolor quasi voluptatem iure assumenda labore nisi veniam ipsum!</p>
+
+            <div id = btn-avg> Find Average Of 4 </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
