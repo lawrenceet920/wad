@@ -1,0 +1,16 @@
+:root {
+    --steelblue: #1f9fca;
+    --white: #fff;
+    --red: #f00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 20px 0 0 20px;;
+}
