@@ -1,42 +1,65 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --light: #a6a5ad;
+    --dark: #2b2a33;
+    --dark-ish: #3b3a43;
+    --false-white: #fbfbfe;
+
+    --link-backround: #52515b;
+    --link-backround-hvr: #84828f;
+    --highlight: #55997f;
   }
 body {
-    color: #a6a5ad;
-    background-color: #2b2a33;
+    color: var(--light);
+    background-color: var(--dark);
     font-family: 'Courier New', Courier, monospace;
 }
-h1 {
-    color: #fbfbfe;
-    margin: 20px;
-    text-align: center;
-    border-bottom: wheat 2px solid;
+
+main {
+    margin: 0 auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 5rem;
 }
 
-.split {
-    /* Once grids are done turn the split into a grid base rather then float-margin based system */
-    margin: 10px 2% 10px 2%;
-    width: 40%;
+.java, .grid-unit, .gal {
     border: 5px wheat solid;
-    background-color: #3b3a43;
-    float: left;
-}
-a:link {
-    color: #fbfbfe;
-}
-a:visited {
-    color: #a6a5ad;
+    background-color: var(--dark-ish);
 }
 
+/* shorten grid */
+.grid-unit {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-template-columns: subgrid;
+    grid-template-areas: 
+    'title title' 
+    'rest rest';
+
+    gap: 0 1rem;
+}
+.grid-unit h2 {
+    grid-area: title;
+}
+
+/* General Pieces */
+/* Links */
 a {
-    color: var(--white);
+    color: var(--false-white);
     text-decoration: none;
     text-align: center;
     display: block;
-    background-color: #52515b;
+    background-color: var(--link-backround);
     padding: 1rem;
-    border: #2b2a33 1px solid;
+    border: var(--dark) 1px solid;
+}
+a:hover {
+    background-color: var(--link-backround-hvr);
 }
 li {
     width: 90%;
@@ -44,6 +67,19 @@ li {
     margin: 5px auto 5px auto;
     border: 2px black solid;
 }
-a:hover {
-    background-color: #84828f;
+/* Other */
+h1 {
+    color: var(--false-white);
+    margin: 20px;
+    text-align: center;
+    border-bottom: wheat 2px solid;
+}
+h2 {
+    text-align: center;
+    color: var(--false-white);
+    line-height: 3;
+    border-bottom: 1px dotted wheat;
+}
+.noteable {
+    background-color: var(--highlight);
 }
