@@ -17,6 +17,6 @@ let peak = parseInt(customerCount1) + parseInt(customerCount2) + parseInt(custom
 peak /= 4;
 
 // Output
-alert(`The average amount of customers in these four hours is ` + peak + ` people!`);
+alert (`The average amount of customers in these four hours is ` + peak + ` people!`);
 console.log (`The average amount of customers in these four hours is ` + peak + ` people!`);
 }
