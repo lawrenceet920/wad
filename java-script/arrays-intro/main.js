@@ -19,4 +19,7 @@ const randomIndex =  Math.floor((Math.random() * fruits.length));
 console.log(randomIndex);
 console.log(fruits[randomIndex]);
 document.getElementById("output").innerHTML = fruits[randomIndex];
+
+// Modern method for future use!
+// document.querySelector("#output").innerHTML = fruits[randomIndex];
 }
