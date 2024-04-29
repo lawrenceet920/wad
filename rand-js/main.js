@@ -17,8 +17,8 @@ console.log(`First Random number floor mthd ${Math.floor(randNum)}`);
 console.log(`Second Random number floor mthd ${Math.floor(secRandNum)}`);
 console.log(`Third Random number floor mthd ${Math.floor(thrdRandNum)}`);
 
-const words = ["seven", "teen", "Bricks", "is", "less", "then", "fourty"];
+const words = ["seven", "teen", "Bricks", "is", "less"];
 
-const randIndex = Math.floor(Math.random() * 5);
+const randIndex = Math.floor(Math.random() * words.length);
 console.log (`Rand Gen index number is ${randIndex}`);
 console.log (`Rand Gen array element is ${words[randIndex]}`);
