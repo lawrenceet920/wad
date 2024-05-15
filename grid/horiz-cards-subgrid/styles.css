@@ -12,7 +12,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     min-height: 100vh;
-    background-color: #30353b;
+    /* background-color: #30353b; */
+    /* Commented out for printing purposes */
 }
 section {
     display: grid;
