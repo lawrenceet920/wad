@@ -33,6 +33,20 @@ a {
     color: #222;
     text-decoration: none;
 }
+
+figure {
+    display: inline-block;
+    object-fit: contain;
+    text-align: center;
+
+    width: 15%;
+    padding: 20px;
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+
 /* Navigation */
 
 nav {
@@ -103,6 +117,12 @@ footer {
     color: #fff;
 }
 
+/* Specifics */
+.right {
+    float: right;
+}
+
+/* Media */
 @media (width > 820px) {
     .wrapper {
         grid-template-columns: 2fr 1fr;
